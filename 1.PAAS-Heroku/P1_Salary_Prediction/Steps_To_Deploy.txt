@@ -1,0 +1,27 @@
+Creating an APP in Heroku : Choose App Name(salary-prediction-api-test)
+
+$ heroku login
+
+Go to the Directory 
+git init
+
+heroku git:remote -a salary-prediction-api-test
+
+git add .
+
+git commit -am "testing-api"
+
+git push heroku master
+
+-----------------------------------------
+
+Once your App is Deployed , And now if you want to do some changes -- Do that changes and follow below steps
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+-------------------------------------------
+
+
+https://salary-prediction-api-test.herokuapp.com/
