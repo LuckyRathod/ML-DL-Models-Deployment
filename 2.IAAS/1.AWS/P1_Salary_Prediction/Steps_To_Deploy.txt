@@ -1,0 +1,44 @@
+#### T4 Deployment of ML Models on AWS (EC2 Instance) - IAAS
+
+1. Check your Flask Code
+2. Create AWS Account on AWS Management Console
+3. Create EC2 Instance (Choose an Instance Type --- Free Tier)
+   Whenever you create New Instance - Generate new key pair -- Download Key Pair (PEM File)
+4. Download Putty -- It helps you to connect to Ubuntu Server
+   Putty contains PuttyGen -- It Helps you to create Private Key from PEM File 
+   This Private key helps you to Interact with AWS EC2 Instance
+5. WinSCP - Helps you to deploy your code in EC2 Intance
+   HostName -- Go to your Instance -- Connect -- SSH Client -- Public DNS
+   Username -- ubuntu
+   Password -- Advanced -- SSH -- Authentication -- Private Key (Choose File which was created by PuttyGen)
+   
+   Upload your Project
+   
+6. Now we need to Install Libraries -- Open Putty
+   Write mldemotest or any name in Saved Sessions
+   SSH -- Auth -- Upload Private key File -- Open
+   winsc
+   Now we will start Installing Libraries
+   
+7. Write this before installing anything ---- sudo apt-get update && sudo apt-get install python3-pip 
+
+8. Make this Instance accessible to everywhere 
+   Network Security -- Security Groups -- Create Security Group 
+   Choose GroupName and Description-- Inbound Groups -- Add Rule ---(Type -All Traffic , Source - Anywhere)
+   
+9. Now we will link about Security Group to EC2 Instance we have created
+   Select Current Network Interface -- Change Security Groups 
+   In Associated Security Groups -- Search Your Security Group Name (FullAccess1) and Add -- Save 
+   
+   Now in your Network Interface --- Security Groups -- You should see FullAccess1 and other Security Groups
+   (If you are not able to see , Toggle to old UI Version)
+   
+10. Go In Putty -- Install Requirements.txt
+    pip3 install -r requirements.txt
+    
+11. Now Run your Project --- python app.py
+
+12. Enter your hostnameFromDNSYouHave:8080 in web-browser
+
+
+Completed.
