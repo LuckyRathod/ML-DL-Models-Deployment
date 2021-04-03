@@ -1,0 +1,24 @@
+### T5 : Deployment of ML Model on Google Cloud Platform
+
+1. Your Python File should be renamed as main.py
+2. app.yaml contains python version 
+3. Create your GCP Account and activate free trail for 365 Days 
+4. GCP Navigation Menu --IAM Admin -- Manage Resources -- Create New Project
+5. GCP Navigation Menu -- App Engine--Dashboard -- Select your Project from Top Menu
+
+Upload Your Project on GCP using Google SDK Installer --- 
+https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
+
+6. CD to your Project Directory in CMD --- Type Below Commmands :
+   - gcloud init
+   - If Prompted to select Numeric Choice select : "Re-Initialize this configuration with new settings" ---1
+   - Then Enter 2 for "New Configuration"
+   - Enter Configuration Name --- anyname
+   - Choose your Account 
+   - Choose your Project
+  
+7. Deploy your code : gcloud app deploy app.yaml --project ProjectName
+   - Select App Region --asia-south1
+   - URL Created
+   
+8. Navigation Menu -- App Engine -- Settings -- Disable Application
