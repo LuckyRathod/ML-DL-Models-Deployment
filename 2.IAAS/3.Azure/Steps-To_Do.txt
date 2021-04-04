@@ -1,0 +1,21 @@
+### T6 - Deployment of ML Model on Microsoft Azure
+
+1. Sign In Microsoft Azure Portal
+2. Create a Resource - Web App 
+   Basics -- Subcription : Free Trial 
+             Create a New Resource Group : AQI
+             Instance Details -- Name -- AQI-Index-Trial
+             Runtime Stack - Python 3.7
+             App Service Plan - Sku Size - Free F1
+   Click on Review + Create -- Create 
+
+3. Once Deployment is Completed -- Go to Resources
+4. From Navigation Menu -- Deployment Center 
+
+###### Deploy your Code on Github as Repository . Then add that Repo in Azure Deployment Center
+
+5. If Github -- Organization -- LuckyRathod , Repository -- Select Repo Name ,
+   Branch -- Master -- Save --- Sync
+   
+6. In Deployment Center -- You can see whether your Deployment was successfully or not
+7. In Navigation Menu -- Overview -- URL
