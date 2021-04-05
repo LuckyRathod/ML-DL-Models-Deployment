@@ -1,0 +1,7 @@
+Features 
+
+ FastAPI -- Uses ASGI (Asynchronous Server Gateway Interface) 
+ Flask or Django -- Uses WSGI (Web Server Gateway Interface) -- Synchronous
+
+ Uvicorn is needed for ASGI
+
