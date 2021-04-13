@@ -1,0 +1,26 @@
+### Specific Packages in Requirements.txt ###
+- uvicorn
+- gunicorm==19.9.0
+- uvloop
+- httptools
+
+### PROC FILE ###
+
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
+
+## web -- Procfile Cmd convention which helps to identify heroku deployment process to start a web app with cmd next to it
+## gunicorn -- WSGI Server to which we are configuring our app to run on
+## -w 4 -- Run app on gunicorn with 4 worker process
+## uvicorn.workers.UvicornWorker -- Tells gunicorn to run app using uvicorn.workers.UvicornWorker class
+## app:app -- First App -- Filename , Second app -- Fastapi class object
+
+##### When you install uvicorn --- It has python Dependency of >3.7 while deploying on Heroku
+
+--- Create "runtime.txt" and inside that write ------ python-3.7.10
+
+
+
+
+
+
+
